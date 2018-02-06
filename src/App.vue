@@ -28,6 +28,12 @@
 
 <style lang="scss">
   @import './assets/css/reset.css';
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s ease;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
 .child-view { 
  position: absolute; 
  left: 0; 
@@ -37,12 +43,12 @@
  transition: all .8s cubic-bezier(.55,0,.1,1); 
 } 
 .slide-left-enter, .slide-right-leave-active { 
- /* opacity: 0;  */
+ opacity: 0;
  -webkit-transform: translate(100%, 0); 
  transform: translate(100%, 0); 
 } 
 .slide-left-leave-active, .slide-right-enter { 
- /* opacity: 0;  */
+  opacity: 0;  
  -webkit-transform: translate(-100%, 0); 
  transform: translate(-100%, 0); 
 }
@@ -50,4 +56,13 @@
     background:#d00;
 }
 
+
+.mint-msgbox-content {
+  padding: .4rem;
+    // line-height: 1.6;
+}
+    
+.mint-msgbox-confirm{
+color:#75a739 ;
+}
 </style>

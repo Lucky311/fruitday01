@@ -3,7 +3,7 @@
         <div class="footer-item">
           <router-link to="/"><a href="javascript:;">首页</a></router-link>
           <router-link to="/product"><a href="javascript:;">分类</a></router-link>
-          <a href="">购物车</a>
+          <router-link to="/cart"><a href="">购物车</a></router-link>
           <a href="">我的果园</a>
         </div>
     </div>
@@ -38,6 +38,8 @@
     .footer-item a{
         display: block;
         width:100%;
-        color: #f00;
+        color: #76a741;
+        font-weight: bold;
+        font-size: .14rem
     }
 </style>

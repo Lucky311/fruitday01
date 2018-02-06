@@ -15,7 +15,10 @@ import footerCart from './components/footerCart'
 import { Swipe, SwipeItem } from 'mint-ui'
 import positionIndex from './modules/Home/position'
 import { Loadmore ,Lazyload } from 'mint-ui';
+import { Popup } from 'mint-ui';
 
+
+Vue.component(Popup.name, Popup);
 Vue.use(Lazyload);
 Vue.component(Loadmore.name, Loadmore);
 Vue.component(positionIndex.name, positionIndex);

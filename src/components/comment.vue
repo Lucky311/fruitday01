@@ -67,24 +67,20 @@ import CommentPic from '@/components/commentPic'
                 this.commentShow = !this.commentShow
             },
             handleScroll () {
-                var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-                
-                var offsetTop = document.querySelector('#searchBar').offsetTop
-                
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop              
+                var offsetTop = document.querySelector('#searchBar').offsetTop              
                 if (scrollTop > offsetTop) {
                     this.searchBarFixed = true
                 } else {
                     this.searchBarFixed = false
                 }
-            },  
-            
+            },   
         },
         mounted(){
-             window.addEventListener('scroll', this.handleScroll)
-             if(this.searchBarFixed == true){
-                 console.log(scrollTop)
-                window.removeEventListener('scroll', this.handleScroll)
-             }
+             window.addEventListener('scroll', this.handleScroll)     
+        },
+        destroyed () {
+            window.removeEventListener('scroll', this.handleScroll)
         }
         
     }

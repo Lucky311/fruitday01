@@ -5,6 +5,7 @@ img{border:0;}
 em{font-style: normal}
 img,input,textarea,button,select{vertical-align: middle}
 ul,ol,menu{list-style:none}
+i{font-style: normal}
 input,textarea,button,select,a{outline: 0 none}
 body{color:#aaaaaa;font-size: .14rem;background: #f5f5f5;position: relative;}
 a{color:#aaaaaa;text-decoration:none;cursor:pointer;}
